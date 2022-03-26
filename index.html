@@ -4,36 +4,47 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Calculadora Romana</title>
   </head>
   <body>
     <div class="container">
       <nav></nav>
+
       <main>
-        <header>
-          <h1>Calculadora Romana I</h1>
-        </header>
+        <div class="principal-container">
+          <header>
+            <h1>Calculadora Romana I</h1>
+          </header>
 
-        <div class="calculator-container">
-          <div class="roman-numerals-container">
-            <input type="text" name="roman1" id="roman1" />
-            <select name="operation" id="operation">
-              <option value="+">+</option>
-              <option value="-">-</option>
-              <option value="*">*</option>
-              <option value="/">/</option>
-            </select>
-            <input type="text" name="roman2" id="roman2" />
+          <div class="calculator-container">
+            <div class="roman-numerals-container">
+              <input type="text" name="roman1" id="roman1" />
+
+              <select name="operation" id="operation">
+                <option value="+">+</option>
+                <option value="-">-</option>
+                <option value="*">*</option>
+                <option value="/">/</option>
+              </select>
+
+              <input type="text" name="roman2" id="roman2" />
+            </div>
+            <!-- .roman-numerals-container -->
+
+            <button>=</button>
+
+            <h3>RESULTADO</h3>
           </div>
-
-          <button>=</button>
-
-          <h3>RESULTADO</h3>
+          <!-- .calculator-container -->
         </div>
+        <!-- .principal-container -->
       </main>
+
       <footer>
         <p>Desenvolvido por Mateus Santos de Azevedo</p>
       </footer>
     </div>
+    <!-- .container -->
   </body>
 </html>
