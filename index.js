@@ -24,7 +24,7 @@ let sym = [
   "M",
 ];
 
-const num = "XXC";
+const num = "MMMCMXCIX";
 
 let i = 0;
 let valueInDecimal = 0;
