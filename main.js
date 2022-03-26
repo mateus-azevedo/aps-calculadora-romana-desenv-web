@@ -24,27 +24,34 @@ let sym = [
   "M",
 ];
 
-const num = "MMMCMXCIX";
+function toggleButtonResult() {
+  const field1 = document.querySelector("#roman1").value.toUpperCase();
+  const field2 = document.querySelector("#roman2").value.toUpperCase();
 
-let i = 0;
-let valueInDecimal = 0;
-while (i < num.length) {
-  let current = i;
-  let next = i + 1;
-  let romanException = num[current] + num[next];
-  let hasDoubleRomanNumeral = checkRomanNumerals(romanException);
-
-  if (hasDoubleRomanNumeral) {
-    valueInDecimal += checkRomanNumerals(romanException);
-    i += 2;
-    continue;
-  }
-
-  valueInDecimal += checkRomanNumeralValue(num[current]);
-  i++;
+  transformRomanToDecimal(field1);
 }
 
-console.log(valueInDecimal);
+function transformRomanToDecimal(value) {
+  let i = 0;
+  let valueInDecimal = 0;
+  while (i < value.length) {
+    let current = i;
+    let next = i + 1;
+    let romanException = value[current] + value[next];
+    let hasDoubleRomanNumeral = checkRomanNumerals(romanException);
+
+    if (hasDoubleRomanNumeral) {
+      valueInDecimal += checkRomanNumerals(romanException);
+      i += 2;
+      continue;
+    }
+
+    valueInDecimal += checkRomanNumeralValue(value[current]);
+    i++;
+  }
+
+  console.log(valueInDecimal);
+}
 
 function checkRomanNumerals(numerals) {
   let result = "";
