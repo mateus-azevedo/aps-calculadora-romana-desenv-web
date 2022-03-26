@@ -25,15 +25,23 @@ let sym = [
 ];
 
 function toggleButtonResult() {
-  const field1 = document.querySelector("#roman1").value.toUpperCase();
-  const field2 = document.querySelector("#roman2").value.toUpperCase();
-
-  transformRomanToDecimal(field1);
+  const [field1, field2] = [
+    document.querySelector("#roman1").value.toUpperCase(),
+    document.querySelector("#roman2").value.toUpperCase(),
+  ];
+  const [number1, number2] = [
+    transformRomanToDecimal(field1),
+    transformRomanToDecimal(field2),
+  ];
+  const operationSign = document.querySelector("#operation").value;
+  console.log(number1);
+  console.log(number2);
 }
 
 function transformRomanToDecimal(value) {
   let i = 0;
   let valueInDecimal = 0;
+
   while (i < value.length) {
     let current = i;
     let next = i + 1;
@@ -50,7 +58,7 @@ function transformRomanToDecimal(value) {
     i++;
   }
 
-  console.log(valueInDecimal);
+  return valueInDecimal;
 }
 
 function checkRomanNumerals(numerals) {
