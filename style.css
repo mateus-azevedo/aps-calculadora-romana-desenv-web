@@ -16,11 +16,6 @@ body {
   height: 100vh;
 }
 
-nav {
-  height: 5%;
-  background-color: antiquewhite;
-}
-
 main {
   display: flex;
   justify-content: center;
