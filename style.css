@@ -1,9 +1,8 @@
 * {
-  margin: 0;
   padding: 0;
-  border: 0;
-  font: inherit;
-  vertical-align: baseline;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Roboto, sans-serif;
 }
 
 .container {
@@ -18,22 +17,30 @@ nav {
 
 main {
   display: flex;
-  height: 80vh;
-  width: 100%;
   justify-content: center;
   align-items: center;
+
+  height: 80vh;
   background-color: black;
 }
 
 .principal-container {
+  background-color: red;
+  padding: 20px;
+}
+
+.principal-content {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 
-  width: 40%;
-  height: 100%;
-  background-color: red;
+  background-color: green;
+}
+
+header {
+  margin-bottom: 30px;
+  text-align: center;
 }
 
 .calculator-title {
@@ -41,14 +48,22 @@ main {
 }
 
 .calculator-container {
+  margin-bottom: 100px;
+}
+
+.calculator-content {
   display: flex;
   flex-direction: column;
-  background-color: green;
+
+  padding: 20px;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .roman-numerals-container {
   display: flex;
   flex-direction: row;
+  margin-bottom: 20px;
 }
 
 #roman1,
@@ -63,6 +78,17 @@ main {
 
 #roman2 {
   margin-left: 10px;
+}
+
+button {
+  width: 10%;
+  align-self: center;
+  margin-bottom: 20px;
+}
+
+.result-box {
+  background-color: blue;
+  /* padding: 10px; */
 }
 
 footer {

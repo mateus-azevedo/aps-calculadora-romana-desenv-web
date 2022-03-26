@@ -13,30 +13,45 @@
 
       <main>
         <div class="principal-container">
-          <header>
-            <h1 class="calculator-title">Calculadora Romana I</h1>
-          </header>
+          <div class="principal-content">
+            <header>
+              <h1 class="calculator-title">Calculadora Romana I</h1>
+              <p>APS - Calculadora Romana</p>
+              <br />
+              <p>
+                Legenda:<br /><br />
+                I = 1; V = 5; X = 10;<br />
+                L = 50; C = 100; D = 500; M = 1000;
+              </p>
+            </header>
 
-          <div class="calculator-container">
-            <div class="roman-numerals-container">
-              <input type="text" name="roman1" id="roman1" />
+            <div class="calculator-container">
+              <div class="calculator-content">
+                <div class="roman-numerals-container">
+                  <input type="text" name="roman1" id="roman1" />
 
-              <select name="operation" id="operation">
-                <option value="+">+</option>
-                <option value="-">-</option>
-                <option value="*">*</option>
-                <option value="/">/</option>
-              </select>
+                  <select name="operation" id="operation">
+                    <option value="+">+</option>
+                    <option value="-">-</option>
+                    <option value="*">*</option>
+                    <option value="/">/</option>
+                  </select>
 
-              <input type="text" name="roman2" id="roman2" />
+                  <input type="text" name="roman2" id="roman2" />
+                </div>
+                <!-- .roman-numerals-container -->
+
+                <button>=</button>
+
+                <div class="result-box">
+                  <h3>RESULTADO</h3>
+                </div>
+              </div>
+              <!-- .calculator-content -->
             </div>
-            <!-- .roman-numerals-container -->
-
-            <button>=</button>
-
-            <h3>RESULTADO</h3>
+            <!-- .calculator-container -->
           </div>
-          <!-- .calculator-container -->
+          <!-- .principal-content -->
         </div>
         <!-- .principal-container -->
       </main>
