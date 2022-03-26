@@ -20,8 +20,9 @@ function printRoman(number) {
 
   for (let i = 12; number > 0; i--) {
     let div = Math.floor(number / num[i]);
-    if (i == 12) {
+    if (i == 10) {
       console.log(div);
+      console.log(number);
       console.log(number % num[i]);
     }
     number = number % num[i];
