@@ -1,36 +1,30 @@
-const value1 = "XX";
-const value2 = "I";
+let number = 3549;
 
-const valor = "CC";
+function printRoman(number) {
+  let num = [1, 4, 5, 9, 10, 40, 50, 90, 100, 400, 500, 900, 1000];
+  let sym = [
+    "I",
+    "IV",
+    "V",
+    "IX",
+    "X",
+    "XL",
+    "L",
+    "XC",
+    "C",
+    "CD",
+    "D",
+    "CM",
+    "M",
+  ];
 
-seiLa(valor);
-
-function seiLa(valor) {
-  let verifica = 0;
-  let testa = "";
-
-  for (let i = 0; i < valor.length; i++) {
-    if (valor[i] === valor[i + 1]) {
-      verifica += converteAlgarismoIguais(valor[i]);
-      testa = verifica.toString();
-      // console.log(testa[0]);
-    } else if (testa[0] === "2" && valor[i] === valor[i - 1]) {
-      verifica += converteAlgarismoIguais(valor[i]);
+  for (let i = 12; number > 0; i--) {
+    let div = Math.floor(number / num[i]);
+    number = number % num[i];
+    while (div--) {
+      console.log(sym[i]);
     }
   }
-
-  console.log(verifica);
 }
 
-function converteAlgarismoIguais(valor) {
-  switch (valor) {
-    case "I":
-      return 1;
-    case "X":
-      return 10;
-    case "C":
-      return 100;
-    case "M":
-      return 1000;
-  }
-}
+printRoman(number);
