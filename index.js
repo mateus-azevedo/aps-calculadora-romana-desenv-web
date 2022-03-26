@@ -32,8 +32,9 @@ while (i < num.length) {
   let current = i;
   let next = i + 1;
   let romanException = num[current] + num[next];
+  let hasDoubleRomanNumeral = checkRomanNumerals(romanException);
 
-  if (checkRomanNumerals(romanException)) {
+  if (hasDoubleRomanNumeral) {
     valueInDecimal += checkRomanNumerals(romanException);
     i += 2;
     continue;
