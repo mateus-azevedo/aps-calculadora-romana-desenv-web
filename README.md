@@ -30,3 +30,5 @@ Por exemplo: IV = 4; IX = 9; XL = 40; XC = 90
 
 Quando aumentamos podendo ser até três vezes
 Por exemplo: III = 3; MMM = 3000;
+
+#### Na versão 1.0.0 da calculadora só tem suporte de conversão até o número 3999
