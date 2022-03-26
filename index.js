@@ -44,23 +44,28 @@ while (i < num.length) {
   i++;
 }
 
+console.log(valueInDecimal);
+
 function checkRomanNumerals(numerals) {
-  switch (numerals) {
-    case numerals === "IV":
-      return 4;
-    case numerals === "IX":
-      return 9;
-    case numerals === "XL":
-      return 40;
-    case numerals === "XC":
-      return 90;
-    case numerals === "CD":
-      return 400;
-    case numerals === "CM":
-      return 900;
-    default:
-      return 0;
+  let result = "";
+
+  if (numerals === "IV") {
+    result = 4;
+  } else if (numerals === "IX") {
+    result = 9;
+  } else if (numerals === "XL") {
+    result = 40;
+  } else if (numerals === "XC") {
+    result = 90;
+  } else if (numerals === "CD") {
+    result = 400;
+  } else if (numerals === "CM") {
+    result = 900;
+  } else {
+    result = 0;
   }
+
+  return result;
 }
 
 function checkRomanNumeralValue(numeral) {
@@ -75,5 +80,3 @@ function checkRomanNumeralValue(numeral) {
       return 1000;
   }
 }
-
-console.log("X" + "C");
