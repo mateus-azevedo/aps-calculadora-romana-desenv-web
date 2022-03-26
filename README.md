@@ -8,13 +8,13 @@
 
 ### Lógica dos cálculos e algarismos
 
-I - 1
-V - 5
-X - 10
-L - 50
-C - 100
-D - 500
-M - 1000
+I - 1<br>
+V - 5<br>
+X - 10<br>
+L - 50<br>
+C - 100<br>
+D - 500<br>
+M - 1000<br>
 
 Observado que qualquer algarismo romano que começa com 1 ele pode ser repetido 3 vezes.
 Por exemplo: III - XXX - CCC - MMM
