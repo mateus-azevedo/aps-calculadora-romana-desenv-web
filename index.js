@@ -38,6 +38,9 @@ while (i < num.length) {
     i += 2;
     continue;
   }
+
+  valueInDecimal += checkRomanNumeralValue(num[current]);
+  i++;
 }
 
 function checkRomanNumerals(numerals) {
@@ -59,5 +62,17 @@ function checkRomanNumerals(numerals) {
   }
 }
 
+function checkRomanNumeralValue(numeral) {
+  switch (numeral) {
+    case "I":
+      return 1;
+    case "X":
+      return 10;
+    case "C":
+      return 100;
+    case "M":
+      return 1000;
+  }
+}
 
 console.log("X" + "C");
