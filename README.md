@@ -1,5 +1,11 @@
 # Calculadora Romana
 
+## 953 - DESENVOLVIMENTO DE APLICAÇÕES WEB 2022/1
+
+### Este é um trabalho de avaliação da Instituição [Unicarioca](https://www.unicarioca.edu.br/)
+
+#### Aluno: Mateus Santos de Azevedo
+
 ### Lógica dos cálculos e algarismos
 
 I - 1
@@ -23,4 +29,4 @@ Quando diminuimos também foi observado que é apenas um algarismo
 Por exemplo: IV = 4; IX = 9; XL = 40; XC = 90
 
 Quando aumentamos podendo ser até três vezes
-Por exemplo:
+Por exemplo: III = 3; MMM = 3000;
