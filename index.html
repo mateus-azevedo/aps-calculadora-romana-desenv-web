@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Calculadora Romana</title>
+  </head>
+  <body>
+    <div class="container">
+      <main>
+        <div class="principal-container">
+          <div class="principal-content">
+            <header>
+              <h1 class="calculator-title">Calculadora Romana I</h1>
+              <p>APS - Calculadora Romana</p>
+              <br />
+              <p>
+                Legenda:<br /><br />
+                I = 1; V = 5; X = 10;<br />
+                L = 50; C = 100; D = 500; M = 1000;
+              </p>
+            </header>
+
+            <div class="calculator-container">
+              <div class="calculator-content">
+                <div class="roman-numerals-container">
+                  <input type="text" name="roman1" id="roman1" />
+
+                  <select name="operation" id="operation">
+                    <option value="+">+</option>
+                    <option value="-">-</option>
+                    <option value="*">*</option>
+                    <option value="/">/</option>
+                  </select>
+
+                  <input type="text" name="roman2" id="roman2" />
+                </div>
+                <!-- .roman-numerals-container -->
+
+                <button>=</button>
+
+                <div class="result-box">
+                  <h3>RESULTADO</h3>
+                </div>
+              </div>
+              <!-- .calculator-content -->
+            </div>
+            <!-- .calculator-container -->
+          </div>
+          <!-- .principal-content -->
+        </div>
+        <!-- .principal-container -->
+      </main>
+
+      <footer>
+        <p>Desenvolvido por Mateus Santos de Azevedo</p>
+      </footer>
+    </div>
+    <!-- .container -->
+  </body>
+</html>
