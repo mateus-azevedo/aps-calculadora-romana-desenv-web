@@ -35,8 +35,9 @@ function toggleButtonResult() {
   ];
   const operationSign = document.querySelector("#operation").value;
   const result = toChooseOperation(number1, number2, operationSign);
+  const spanHtmlResult = document.getElementById("result-text");
 
-  console.log(result);
+  spanHtmlResult.innerHTML = `${result}`;
 }
 
 function transformRomanToDecimal(value) {
