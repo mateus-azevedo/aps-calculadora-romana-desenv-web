@@ -34,8 +34,9 @@ function toggleButtonResult() {
     transformRomanToDecimal(field2),
   ];
   const operationSign = document.querySelector("#operation").value;
-  console.log(number1);
-  console.log(number2);
+  const result = toChooseOperation(number1, number2, operationSign);
+
+  console.log(result);
 }
 
 function transformRomanToDecimal(value) {
@@ -100,4 +101,33 @@ function checkRomanNumeralValue(numeral) {
     case "M":
       return 1000;
   }
+}
+
+function toChooseOperation(value1, value2, operationSymbol) {
+  switch (operationSymbol) {
+    case "+":
+      return sum(value1, value2);
+    case "-":
+      return difference(value1, value2);
+    case "*":
+      return product(value1, value2);
+    case "/":
+      return quotient(value1, value2);
+  }
+}
+
+function sum(term1, term2) {
+  return term1 + term2;
+}
+
+function difference(minuend, subtrahend) {
+  return minuend - subtrahend;
+}
+
+function product(multiplier, multiplicand) {
+  return multiplier * multiplicand;
+}
+
+function quotient(numerator, denominator) {
+  return numerator / denominator;
 }
