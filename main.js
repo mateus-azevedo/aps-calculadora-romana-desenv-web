@@ -134,39 +134,34 @@ function quotient(numerator, denominator) {
 }
 
 /**
- * let number = 3549;
-
-function printRoman(number) {
-  let num = [1, 4, 5, 9, 10, 40, 50, 90, 100, 400, 500, 900, 1000];
-  let sym = [
-    "I",
-    "IV",
-    "V",
-    "IX",
-    "X",
-    "XL",
-    "L",
-    "XC",
-    "C",
-    "CD",
-    "D",
-    "CM",
-    "M",
-  ];
-
-  for (let i = 12; number > 0; i--) {
-    let div = Math.floor(number / num[i]);
-    if (i == 10) {
-      console.log(div);
-      console.log(number);
-      console.log(number % num[i]);
+// Fonte https://acervolima.com/conversao-de-numeros-decimais-entre-1-e-3999-em-algarismos-romanos/
+// JavaScript Program to convert decimal number to
+// roman numerals
+ 
+ 
+// Function to convert decimal to Roman Numerals
+function printRoman(number)
+{
+    let num = [1,4,5,9,10,40,50,90,100,400,500,900,1000];
+    let sym = ["I","IV","V","IX","X","XL","L","XC","C","CD","D","CM","M"];
+    let i=12;
+    while(number>0)
+    {
+    let div = Math.floor(number/num[i]);
+    number = number%num[i];
+    while(div--)
+    {
+        document.write(sym[i]);
     }
-    number = number % num[i];
-    while (div--) {
-      // console.log(sym[i]);
+    i--;
     }
-  }
 }
-
-printRoman(number);
+ 
+//Driver program
+ 
+    let number = 3549;
+ 
+    printRoman(number);
+ 
+//This code is contributed by Manoj
  */
