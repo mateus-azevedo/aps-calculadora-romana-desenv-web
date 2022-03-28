@@ -8,22 +8,6 @@
  * "CM", 900
  */
 
-let sym = [
-  "I",
-  "IV",
-  "V",
-  "IX",
-  "X",
-  "XL",
-  "L",
-  "XC",
-  "C",
-  "CD",
-  "D",
-  "CM",
-  "M",
-];
-
 function toggleButtonResult() {
   const [field1, field2] = [
     document.querySelector("#roman1").value.toUpperCase(),
@@ -34,8 +18,9 @@ function toggleButtonResult() {
     transformRomanToDecimal(field2),
   ];
   const operationSign = document.querySelector("#operation").value;
-  const result = toChooseOperation(number1, number2, operationSign);
   const spanHtmlResult = document.getElementById("result-text");
+  let result = toChooseOperation(number1, number2, operationSign);
+  result = printRoman(result);
 
   spanHtmlResult.innerHTML = `${result}`;
 }
@@ -131,4 +116,44 @@ function product(multiplier, multiplicand) {
 
 function quotient(numerator, denominator) {
   return numerator / denominator;
+}
+
+/**
+ * Fonte https://acervolima.com/conversao-de-numeros-decimais-entre-1-e-3999-em-algarismos-romanos/
+ * JavaScript Program to convert decimal number to
+ * roman numerals
+ *
+ * Function to convert decimal to Roman Numerals
+ * This code is contributed by Manoj
+ */
+
+function printRoman(number) {
+  let num = [1, 4, 5, 9, 10, 40, 50, 90, 100, 400, 500, 900, 1000];
+  let sym = [
+    "I",
+    "IV",
+    "V",
+    "IX",
+    "X",
+    "XL",
+    "L",
+    "XC",
+    "C",
+    "CD",
+    "D",
+    "CM",
+    "M",
+  ];
+  let romanSetence = "";
+  let i = 12;
+  while (number > 0) {
+    let div = Math.floor(number / num[i]);
+    number = number % num[i];
+    while (div--) {
+      romanSetence += sym[i];
+    }
+    i--;
+  }
+
+  return romanSetence;
 }
