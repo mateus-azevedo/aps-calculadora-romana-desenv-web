@@ -49,6 +49,8 @@ O numero decimal que é passado para função é dividido diversas vezes a fim d
 
 Tornando capaz a visualização do resultado na página HTMLS"
 
-![calculator-gif](https://user-images.githubusercontent.com/62727807/160505181-148a67d3-b123-4bc3-9dc5-8b696a94f32f.gif)
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/62727807/160505181-148a67d3-b123-4bc3-9dc5-8b696a94f32f.gif" alt="calculator-gif" >
+</p>
 
 #### Na versão 1.0.0 da calculadora só tem suporte de conversão até o número 3999
